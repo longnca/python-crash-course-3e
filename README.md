@@ -1,6 +1,6 @@
 # Python Crash Course, 3rd Edition by Eric Matthes
 
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/longbytes/Python-Crash-Course-3e-Matthes)
+![GitHub last commit](https://img.shields.io/github/last-commit/longnca/Python-Crash-Course-3e-Matthes)
 
 I bought this book from Amazon. An excellent book for Python beginners.
 
