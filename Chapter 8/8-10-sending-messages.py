@@ -9,6 +9,7 @@ def send_messages(messages, sent_messages):
         print(f"The message to be sent is: {msg}")
         sent_messages.append(msg)
         
+        
 def show_completed_send(sent_messages):
     print("\nSent messages:")
     for sent_message in sent_messages:
