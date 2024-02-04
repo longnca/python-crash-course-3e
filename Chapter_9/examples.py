@@ -30,7 +30,7 @@ print(dream_car.describe())
 class ElectricCar(Car):
     # Initializer for ElectricCar, adding battery_size
     def __init__(self, make, model, color, battery_size):
-        # Initialize attributes from the parent class
+        """Initialize attributes from the parent class"""
         super().__init__(make, model, color)
         self.battery_size = battery_size # New attribute for battery size
      

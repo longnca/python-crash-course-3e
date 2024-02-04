@@ -14,7 +14,7 @@
 
 ### Method
 
-- Method = Behaviours of an Object (e.g. Run, start, stop, honk...)
+- Method = Behaviors of an Object (e.g. Run, start, stop, honk...)
 
 ### Attributes
 
