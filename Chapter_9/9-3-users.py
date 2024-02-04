@@ -15,12 +15,12 @@ class User:
         self.location = location
         self.occupation = occupation
     
-    # Method to show user's information
     def describe_user(self):
+        """Return the informaiton of the User."""
         return f"The user's information: {self.first_name} {self.last_name} - {self.age} - {self.location} - {self.occupation}."
 
-    # Method to greet the user
     def greet_user(self):
+        """Return a message to welcome the user."""
         return f"Hello, {self.first_name}!"
     
 # create instances

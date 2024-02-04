@@ -11,12 +11,12 @@ class Restaurant:
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
     
-    # Method to print information
     def describe_restaurant(self):
+        """Return the name and cuisine type of the restaurant."""
         return f"{self.restaurant_name} - {self.cuisine_type}"
     
-    # Method to indicate the restaurant is open
     def restaurant_open(self):
+        """Return the info that the restaurant is open."""
         return f"{self.restaurant_name} is open today."
 
 # Create an object
