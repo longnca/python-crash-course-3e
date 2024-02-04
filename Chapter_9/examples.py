@@ -26,7 +26,7 @@ dream_car = Car('Tesla', 'Model S', 'white')
 print(my_car.describe()) # Output car details
 print(dream_car.describe())
 
-# Inheritance: Defining a subclss for Electric Cars
+# Inheritance: Defining a subclass for Electric Cars
 class ElectricCar(Car):
     # Initializer for ElectricCar, adding battery_size
     def __init__(self, make, model, color, battery_size):
