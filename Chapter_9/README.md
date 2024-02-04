@@ -1,6 +1,6 @@
 # Object-oriented Programming (OOP) with Python
 
-![OOP with Python](/Chapter_9/OOP%20with%20Python.png)
+![OOP with Python](OOP%20with%20Python.png)
 
 ## Key Concepts: C.O.M.A
 
@@ -38,3 +38,8 @@
 - E.g. method `move()`:
   - For Car object: `car.move()` = the car runs on the road
   - For Boat object: `boat.move()` = the boat moves on the water surface.
+
+### Importing Class
+
+![import_classes](import_classes.png)
+*Content credit: E. Matthes. Image credit: me*

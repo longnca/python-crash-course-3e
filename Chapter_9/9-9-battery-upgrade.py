@@ -5,7 +5,7 @@
 # and then call get_range() a second time after upgrading the battery. 
 # You should see an increase in the car's range.
 
-# From electric_car.py
+# From electric_car.py:
 
 class Car:
     """A simple attempt to represent a car."""
@@ -48,10 +48,13 @@ class Battery:
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
     
-    def upgrade_battery(self, size=65):
-        """Check the battery size and set the capacity to 65."""
-        self.battery_size = size
-        print(f"This car has upgraded to a {self.battery_size}-kWh battery.")
+    def upgrade_battery(self):
+        """Upgrade the battery size to 65 kWh if it isn't already."""
+        if self.battery_size < 65:
+            self.battery_size = 65
+            print("Battery upgraded to 65 kWh.")
+        else:
+            print("Battery upgrade not necessary.")
     
     def get_range(self):
         """Print a statement about the range this battery provides."""
