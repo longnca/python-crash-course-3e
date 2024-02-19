@@ -9,7 +9,7 @@ This repo stores my answers to exercises from the book 'Python Crash Course, 3rd
 - The repository follows the book's structure, organizing exercises by chapters and numbers.
 - I went through the theory and examples in the book.
 - After completing the theory and example section, I tackled the exercises the author calls "Try It Yourself." These are the numbered exercises.
-- *A little note*: I've treated this book as both a solid primer and an effective refresher. I kept coming back to chapters and exercises  as needed, which is why you may notice that some are omitted.
+- *A little note*: I've treated this book as both a solid primer and refresher. I kept coming back to chapters and exercises  as needed, which is why you may notice that some are omitted.
 
 ## Links
 
