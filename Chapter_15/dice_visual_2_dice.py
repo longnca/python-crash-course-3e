@@ -28,5 +28,11 @@ fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels)
 
 # Further customize chart.
 fig.update_layout(xaxis_dtick=1)
-              
+
+# Set the path to specific directory and then save the chart to an HTML file
+from pathlib import Path 
+output_dir = Path('Chapter_15')
+fig.write_html(f"{output_dir}/dice_visual_d6d10.html")
+
+# Show the chart
 fig.show()
