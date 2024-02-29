@@ -1,15 +1,13 @@
 """
-Instead of using the generic title 'Global Earthquakes', use the title for the
-dataset in the metadata part of the GeoJSON file. Pull this value and assign it 
-to the variable 'title'.
+Link to download GeoJSON dataset: 
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php 
 """
 
 from pathlib import Path
 import json
 import plotly.express as px 
 
-# Read data as a string and convert to a Python object
-path = Path('Chapter_16/eq_data/eq_data_30_day_m1.geojson')
+path = Path('Chapter_16/eq_data/2.5_week.geojson')
 contents = path.read_text(encoding='utf-8')
 all_eq_data = json.loads(contents)
 
