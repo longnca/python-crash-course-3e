@@ -1,4 +1,11 @@
 """
+The dataset contains information about fires burning in different locations 
+around the globe, including the latitude, longitude, and brightness of each fire.
+
+Using the data-processing work from the first part of this chapter and the
+mapping work from this section, make a map that shows which parts of the world
+are affected by fires.
+
 Link to download the most recent dataset:
 https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data
 """
@@ -16,28 +23,19 @@ header_row = next(reader)
 
 print(header_row)
 
+for index, column_header in enumerate(header_row):
+    print(index, column_header)
 
-# Extract dates, and high and low temperatures
-lats, lons, brights = [], [], []
+# Extract the latitude, longitude, and brightness from the dataset
+lats, longs, brights = [], [], []
 for row in reader:
     try:
-        lat = int(row[0])
-        lon = int(row[1])
-        brightness = int(row[2])
+        lat = int(row[header_row.index('latitude')])
+        long = int(row[header_row.index('longitude')])
+        bright = int(row[header_row.index('brightness')])
     except ValueError:
-        print(f"Missing data")
-    else:
+        print(f"Missing values for location at latitude and longitude")
+    else: 
         lats.append(lat)
-        lons.append(lon)
-        brights.append(brightness)
-
-# Pull the value from metadata part of the GeoJSON file
-title = 'World Fire Map'
-
-fig = px.scatter_geo(lat=lats, lon=lons, size=brights, title=title,
-        color=brights,
-        color_continuous_scale='solar', #Color scales: https://plotly.com/python/builtin-colorscales/ 
-        labels={'color':'Magnitude'},
-        projection='natural earth',
-    )
-fig.show()
+        longs.append(long)
+        brights.append(bright)
